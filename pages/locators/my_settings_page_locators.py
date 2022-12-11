@@ -1,0 +1,17 @@
+from selenium.webdriver.common.by import By
+
+my_settings_button = (By.CSS_SELECTOR, 'a[href="/profile/settings/"]')
+data_field = (By.ID, 'common')
+surname = (By.ID, 'profile_last_name')
+name = (By.ID, 'profile_first_name')
+patronymic = (By.ID, 'profile_patronymic')
+city = (By.ID, 'profile_city')
+address = (By.ID, 'profile_addressИндекс')
+birthday = (By.ID, 'profile_birth_time')
+save_button = (By.CSS_SELECTOR, 'button[type="submit"]')
+add_photo_field = (By.ID, 'upload-avatar_id')
+profile_info = (By.ID, 'profile_info')
+contacts = (By.ID, 'profile_contacts')
+pop_up_message = (By.CSS_SELECTOR, 'div[class="alert result alert-success hidden"]')
+icon_after_adding_photo = (By.XPATH, '//*[@id="header"]/ul/li[1]/a/img')
+city_in_prof = (By.CSS_SELECTOR, 'span[class="pull-right info"]')
