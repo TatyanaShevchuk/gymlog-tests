@@ -6,9 +6,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
-login_button = (By.XPATH, '//*[@id="header"]/a[1]')
-
-
 @pytest.fixture(scope='function')
 def driver():
     options = Options()
@@ -29,7 +26,5 @@ def user_logining(driver):
     login_password = driver.find_element(By.ID, 'password')
     login_password.send_keys(settings.password)
     login_password.send_keys(Keys.ENTER)
-
-
 
 
